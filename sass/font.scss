@@ -1,0 +1,29 @@
+@font-face {
+    font-family: PTsans;
+    src: url(../fonts/web/ptsans.woff2);
+}
+
+@font-face {
+    font-family: PTsans__bold;
+    src: url(../fonts/web/ptsansbold.woff2);
+}
+
+body {
+	font-family: PTsans, sans-serif;
+}
+
+.menu__list {
+	font-family: $font__bold;
+}
+
+h2,button {
+	@extend .menu__list;
+	font-size: 21px;
+}
+
+p, span {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+

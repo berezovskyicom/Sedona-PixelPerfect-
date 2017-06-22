@@ -1,0 +1,28 @@
+.adv__box {
+	width: 397px;
+	height: 330px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 60px 58px;
+	text-align: center;
+}
+
+.adv__title {
+	@extend .expl__counter;
+}
+
+.adv__housing {
+	float: left;
+}
+
+.reasons__adv-bottom {
+	background-color: #eee;
+	
+	& .adv__box {
+		height: 225px;
+		padding: 30px 69px;
+	}
+	& .adv__title {
+		padding: 0;
+	}
+}

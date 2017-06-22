@@ -1,0 +1,26 @@
+.sedona__footer {
+	background-color: rgba(250,252,247,.5);
+	&-padding {
+		padding: 35px 118px;
+		display: inline-block;
+	}
+	&-sn {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.footer-sn {
+	&__box {
+		background-color: rgba(137,184,213,1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 45px;
+		height: 45px;
+		margin-right: 5px;
+	}
+	&__title {
+		display: none;
+	}
+}

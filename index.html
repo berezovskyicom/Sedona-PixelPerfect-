@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+	<title>Sedona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
+</head>
+<body>
+	<div class="sedona">
+		<header class="sedona__menu">
+			<ul class="menu__list">
+				<li class="menu__list-item"><a href="#">Информация</a></li>
+				<li class="menu__list-item"><a href="#">Фото и Видео</a></li>
+				<li class="menu__list-item menu__list-item__before"><a href="#">Карта Штата</a></li>
+				<li class="menu__list-item"><a href="#">Гостинницы</a></li>
+			</ul>	
+		</header>
+		<main>
+			<section class="lcw">
+				<img src="img/background__header.jpg" alt="Sedona - because Grand Canyon Sucks!" class="lcw__img">
+				<h2 class="lcw__explanation">СЕДОНА — небольшой городок в АРИЗОНЕ,<br>зАСЛУЖИвающий большего!</h2>
+				<p class="lcw__explanation">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</section>
+
+			<section class="reasons">
+				<div class="reasons__container reasons__real-city">
+					<div class="reasons__expl">
+						<h2 class="expl__title">Настоящий<br>городок</h2>
+							<span class="expl__counter">&#8470;1</span>
+								<p class="expl__main">СЕДОНА - НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+					</div>
+					<div class="reasons__img">
+						<img src="img/real__city.jpg" alt="Sedona city">
+					</div>	
+				</div>
+				<section class="reasons__adv">
+					<div class="adv__box adv__housing">
+						<img src="img/section__housing.png" alt="Жилье" class="adv__img">
+							<h2 class="adv__title">Жилье</h2>
+								<p class="adv__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</div>
+					<div class="adv__box adv__food">
+						<img src="img/section__food.png" alt="Еда" class="adv__img">
+							<h2 class="adv__title">Еда</h2>
+								<p class="adv__desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+					</div>
+					<div class="adv__box adv__souvenirs">
+						<img src="img/section__souvenir.png" alt="Сувениры" class="adv__img">
+							<h2 class="adv__title">Сувениры</h2>
+								<p class="adv__desc">Не только китайского,<br>но и местного производства!</p>
+					</div>
+				</section>
+				<div class="reasons__container reasons__devil-bridge">
+					<div class="reasons__img">
+						<img src="img/devil__bridge.jpg" alt="Мост дьявола">
+					</div>
+					<div class="reasons__expl">
+						<h2 class="expl__title">ТАМ ЕСТЬ Мост дьявола</h2>
+							<span class="expl__counter">&#8470;2</span>
+								<p class="expl__main">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>	
+				</div>
+				<section class="reasons__adv  reasons__adv-bottom">
+					<div class="adv__box adv__size">
+						<h2 class="adv__title">Небольшая<br>площадь</h2>
+							<span class="expl__counter">&#8470;3</span>
+								<p class="adv__desc">ВСЕ достопримечательности находятся очень близко</p>
+					</div>
+					<div class="adv__box adv__road">
+						<h2 class="adv__title">Красивая<br>дорога</h2>
+							<span class="expl__counter">&#8470;4</span>
+								<p class="adv__desc">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+					</div>
+					<div class="adv__box adv__tourists">
+						<h2 class="adv__title">Мало<br>туристов</h2>
+							<span class="expl__counter">&#8470;5</span>
+								<p class="adv__desc">Большинство едет в гранд каньон и толпится там</p>
+					</div>
+				</section>
+			</section>
+			<section class="interest">
+				<div class="interest__header">
+					<h2 class="interest__title">Заинтересовались?</h2>
+						<p class="adv__desc">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+							<button class="interest__search" type="button">Поиск гоcтинницы в Седоне</button>
+				</div>		
+							<div class="interest__popup">
+								<p>
+									<label for="checkin">Дата Заезда:</label>
+										<span class="popup__date">
+											<input type="date" id="checkin" value="2017-04-24">
+										</span>
+								</p>
+								<p>
+									<label for="checkin">Дата Выезда:</label>
+										<span class="popup__date">
+											<input type="date" id="checkout" value="2017-07-24">
+										</span>
+								</p>
+								<p class="popup__adults">
+									<label for="adults">Взрослые:</label>
+										<span class="popup__counter">
+											<input type="number" id="adults" value="2" min="0" pattern="[0-9]*">
+										</span>	
+								</p>
+								<p class="popup__children">
+									<label for="children">Дети:</label>
+										<span class="popup__counter">
+											<input type="number" id="children" value="2" min="0" pattern="[0-9]*">
+										</span>
+								</p>
+								<a href="#" class="popup__search">Найти</a>
+							</div>
+			</section>
+		</main>
+
+		<footer class="sedona__footer">
+			<div class="sedona__footer-hashtag sedona__footer-padding"><h2>#visitsedona</h2></div>
+				<section class="sedona__footer-padding">
+					<div class="sedona__footer-sn">
+						<div class="footer-sn__box">
+							<img src="img/f.png" alt="Мы в facebook">
+								<h2 class="footer-sn__title">Facebook</h2>
+						</div>
+						<div class="footer-sn__box">
+							<img src="img/t.png" alt="Мы в twitter">
+								<h2 class="footer-sn__title">Twitter</h2>
+						</div>
+						<div class="footer-sn__box">
+							<img src="img/y.png" alt="Мы в youtube">
+								<h2 class="footer-sn__title">Youtube</h2>
+						</div>
+					</div>		
+				</section>
+					<div class="sedona__footer-madeby sedona__footer-padding">
+						<a href="https://htmlacademy.ru">
+							<img src="img/htmlacademy__logo.png" alt="Сделано htmlacademy">
+						</a>
+					</div>
+		</footer>
+	</div>	
+</body>
+</html>
